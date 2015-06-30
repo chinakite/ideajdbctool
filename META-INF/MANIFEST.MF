@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: IdeaJdbc4eclipse
+Bundle-SymbolicName: ideajdbc4eclipse;singleton:=true
+Bundle-Version: 0.0.1
+Bundle-Activator: com.ideamoment.ideajdbc4eclipse.IdeaJdbcActivator
+Bundle-Vendor: IDEAMOMENT Inc.
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.databinding;bundle-version="1.4.0",
+ org.eclipse.core.databinding.beans;bundle-version="1.2.100"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: lib/dom4j-1.6.1.jar,
+ lib/mysql-connector-java-5.1.25-bin.jar,
+ .

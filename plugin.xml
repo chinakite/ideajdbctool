@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="IdeaJdbc"
+            id="com.ideamoment.ideajdbc4eclipse">
+      </category>
+      <view
+            name="IdeaJdbc Database"
+            icon="icons/sample.gif"
+            category="com.ideamoment.ideajdbc4eclipse"
+            class="com.ideamoment.ideajdbc4eclipse.views.IdeaJdbcDatabaseView"
+            id="ideajdbc4eclipse.views.IdeaJdbcDatabaseView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               ratio="0.5"
+               relative="org.eclipse.ui.views.TaskList"
+               relationship="right"
+               id="ideajdbc4eclipse.views.IdeaJdbcDatabaseView">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            default="false"
+            id="com.ideamoment.ideajdbc4eclipse.editors.ClauseEditor"
+            class="com.ideamoment.ideajdbc4eclipse.editors.ClauseEditor"
+            matchingStrategy="com.ideamoment.ideajdbc4eclipse.editors.ClauseEditorMatchingStrategy"
+            name="ClauseEditor">
+      </editor>
+   </extension>
+
+</plugin>
