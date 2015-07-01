@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: IdeaJdbc4eclipse
-Bundle-SymbolicName: ideajdbc4eclipse;singleton:=true
+Bundle-Name: IdeaJdbc Tool
+Bundle-SymbolicName: ideajdbctool;singleton:=true
 Bundle-Version: 0.0.1
-Bundle-Activator: com.ideamoment.ideajdbc4eclipse.IdeaJdbcActivator
+Bundle-Activator: com.ideamoment.ideajdbctool.IdeaJdbcActivator
 Bundle-Vendor: IDEAMOMENT Inc.
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
