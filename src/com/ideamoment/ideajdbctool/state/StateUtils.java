@@ -46,7 +46,7 @@ public class StateUtils {
 	            format.setEncoding("UTF-8");
 				
 				Document document = DocumentHelper.createDocument();
-				Element root = document.addElement("xml");
+				Element root = document.addElement("conns");
 				XMLWriter writer = new XMLWriter(new FileWriter(storeFile),
 						format);
 				writer.write(document);
